@@ -7,6 +7,9 @@
     --color-hero-button-shadow: rgba(0, 0, 0, 0.15);
     --color-Ocean: #404BBF;
     --color-Cloud: #F4F4FD;
+    --color-Grey: rgba(46, 47, 66, 0.7);
+    --color-Ellipse: rgba(255, 255, 255, 0.1);
+    --color-Green: #31D0AA;
 }
 
 body {
@@ -122,6 +125,12 @@ ul {
 
 
 .hero {
+    background-image: linear-gradient(var(--color-Grey), var(--color-Grey)), url('../images/people-office-1.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     background-color: var(--color-NavyBlue);
 }
 
@@ -251,7 +260,48 @@ ul {
     margin-top: 8px;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     margin-bottom: 32px;
+}
+
+.icons-item {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-Iris);
+    border-radius: 50%;
+
+}
+
+.icons-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-Cloud);
+
+}
+
+.section-4-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-NavyBlue);
 }
 
 .footer {
@@ -260,6 +310,7 @@ ul {
 }
 
 .footer-container {
+    display: flex;
     width: 264px;
 }
 
@@ -279,6 +330,10 @@ ul {
     color: var(--color-Cloud);
 }
 
+.footer-logo-container {
+    margin-right: 120px;
+}
+
 .footer-logo {
     margin-bottom: 16px;
 }
@@ -286,6 +341,41 @@ ul {
 .footer .text {
     line-height: 1.5;
     color: var(--color-Cornflower);
+}
+
+.social>p {
+    color: var(--color-Main-Background);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.icons-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.icons-item-footer {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-Ellipse);
+    border-radius: 50%;
+}
+
+.icons-link-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-Cloud);
 }
 
 /** portfolio */
@@ -351,6 +441,14 @@ ul {
     margin: 0;
     margin-bottom: 32px;
     padding: 0;
+}
+
+.icons-item:hover {
+    background-color: var(--color-Ocean);
+}
+
+.icons-item-footer:hover {
+    background-color: var(--color-Green);
 }
 
 .button:hover {
