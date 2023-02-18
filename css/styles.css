@@ -149,6 +149,8 @@ ul {
     font-weight: 500;
     font-size: 16px;
     margin-top: 48px;
+    border: none;
+    border-radius: none;
     padding: 16px 32px;
     letter-spacing: 0.04em;
     background: var(--color-Iris);
@@ -160,7 +162,7 @@ ul {
 
 /** section-1 */
 .section-1 {
-    padding: 120px;
+    padding: 120px 0;
 }
 
 .section-1-icons-list {
@@ -197,7 +199,7 @@ ul {
 .section-1 .punctuality,
 .section-1 .diligence,
 .section-1 .technologies {
-    padding: 8px 0;
+    margin: 8px 0;
 }
 
 .section-1 .strategy {
@@ -266,14 +268,14 @@ ul {
 }
 
 .section-3 {
+    padding-top: 120px;
     background-color: var(--color-Cloud);
 }
 
 .section-3-title {
     font-size: 36px;
     line-height: 1.11;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
     text-transform: capitalize;
     color: var(--color-NavyBlue);
@@ -287,7 +289,7 @@ ul {
 
 .team-member-all-text {
     padding-top: 32px;
-    padding-bottom: 8px;
+    padding-bottom: 32px;
 }
 
 .section-3 .team-member-name {
@@ -300,6 +302,7 @@ ul {
 
 .section-3 .team-member-description {
     margin-top: 8px;
+    margin-bottom: 8px;
     line-height: 1.5;
     text-align: center;
 }
@@ -309,7 +312,6 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 32px;
 }
 
 .icons-item {
@@ -344,8 +346,7 @@ ul {
 .section-4-title {
     font-size: 36px;
     line-height: 1.11;
-    margin: 0;
-    padding-bottom: 76px;
+    margin-bottom: 76px;
     text-align: center;
     text-transform: capitalize;
     color: var(--color-NavyBlue);
@@ -457,7 +458,7 @@ ul {
 
 /** portfolio */
 .section {
-    padding: 96px 156px;
+    padding: 96px 0px;
 }
 
 .filters .button {
@@ -478,12 +479,11 @@ ul {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 
-
-.section-2-portf .photo-desc {
+.photo-desc {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -492,7 +492,9 @@ ul {
 
 .text-border {
     border: 1px solid var(--color-Cornflower);
+    border-top: none;
     padding: 32px 0;
+    padding-left: 16px;
 }
 
 
@@ -518,30 +520,39 @@ ul {
 /** portfolio */
 
 /** hovers*/
-.icons-item:hover {
+.icons-item:hover,
+.icons-item:focus {
     background-color: var(--color-Ocean);
 }
 
-.icons-item-footer:hover {
+.icons-item-footer:hover,
+.icons-item-footer:focus {
     background-color: var(--color-Green);
 }
 
 
-.customer-link:hover {
+.customer-link:hover,
+.customer-link:focus {
     border-color: var(--color-Ocean);
     color: var(--color-Ocean);
 }
 
-.button:hover {
+
+
+.button:hover,
+.button:focus {
     cursor: pointer;
     background: var(--color-Ocean);
     color: var(--color-Main-Background);
 }
 
+.hero-button:hover {
+    cursor: default;
+}
+
 .button:active {
     background: var(--color-Ocean);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .link:hover,
