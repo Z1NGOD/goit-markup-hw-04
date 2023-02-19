@@ -493,7 +493,7 @@ ul {
 }
 
 .text-border {
-    border: 1px solid var(--color-Cornflower);
+    border: 0.5px solid var(--color-Cornflower);
     border-top: none;
     padding: 32px 0;
     padding-left: 16px;
@@ -519,17 +519,26 @@ ul {
     padding-bottom: 24px;
 }
 
+.section-2-porft-list-link {
+    color: var(--color-Slate);
+
+}
+
 /** portfolio */
 
 /** hovers*/
-.icons-item:hover,
-.icons-item:focus {
+
+
+.icons-link:hover,
+.icons-link:focus {
     background-color: var(--color-Ocean);
+    border-radius: 50%;
 }
 
-.icons-item-footer:hover,
-.icons-item-footer:focus {
+.icons-link-footer:hover,
+.icons-link-footer:focus {
     background-color: var(--color-Green);
+    border-radius: 50%;
 }
 
 
@@ -560,4 +569,12 @@ ul {
 .link:hover,
 .link:focus {
     color: var(--color-Ocean);
+}
+
+.section-2-porft-list-link:hover,
+.section-1-portf-list-link:focus {
+    cursor: pointer;
+    color: var(--color-Slate);
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
